@@ -10,6 +10,6 @@ fi
 
 rm doctor.rb -f
 
-wget --no-check-certificate -q https://github.com/maxshlain/doctor-poc/blob/main/doctor.rb
+wget --no-check-certificate -q https://raw.githubusercontent.com/maxshlain/doctor-poc/main/doctor.rb
 
 inspec exe doctor.rb
