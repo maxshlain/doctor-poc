@@ -3,6 +3,7 @@ if ! which inspec;
 then
   echo "Inspec not installed. Installing"
   curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P inspec
+  inspec --chef-license=accept-silent
   echo "Inspec installation completed"
 else
   echo "Inspec already installed"
